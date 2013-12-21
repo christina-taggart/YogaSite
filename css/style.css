@@ -1,0 +1,96 @@
+/*
+ body {} in pink are selectors to select areas of our html to sylize
+ .btn is a class selector
+ #intro is an id selector, matches name in index.html
+ padding makes element bigger,  margin pushes element away from surroundings [box model]
+   Hexidecimal color: 16x16, 256 color possibilities, values A through F
+   Each place is 2 numerals (for R G B respectively), total of 6 places
+   The higher the value, the more of each color will be mixed in
+   Ex: Red: #FF0000, Green: #00FF00, Blue: #0000FF
+*/
+
+body {
+	/*if the first font is not available, it will use the next listed font, sans-serif is very general*/
+	font-family: 'Nunito', sans-serif;
+	color: #FAF3BC; /*close to white but with some of the blue removed, close to yellow*/
+	background: #420600 url('img/bg-texture.jpg') repeat; /*color there in case image doesnt load,
+	 image in css/img, repeat repeats the image in case it doesnt fit in screen */
+
+}
+
+/*element selector to select all anchor tags to change the color and underline for links*/
+
+a {
+	color: #4FB69F;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 1.750em; /*relative unit of measurement*/
+	letter-spacing: -1.5px; /*letters closer together*/
+}
+
+h2{
+	font-size: 1.500em;
+	color: #B4C34F;
+}
+
+/*this button is actually a link being overriden by anchor selector, we override again bring back original color*/
+.btn {
+	color: #FAF3BC;
+	/*right top keyworkds sets positioning of background image*/
+  	background: #4FB69F url('img/texture.png') no-repeat right top;
+  	padding: 15px 30px; /*15 pads top and bottom, 30 pads left right*/
+  	margin: 40px 0px;
+  	border-radius: 25px; /*adds rounded corners to button, the higher the value, the curvier the corners*/
+  	text-transform: uppercase; /*uppercase so dont have to in html   */
+}
+
+/*apply pseudoclass to make button appear different when you hover over it*/
+.btn:hover{
+	background-color: #4CC4A7;
+}
+
+/*float naviagtion list to the right*/
+ul.nav {
+	margin: 120px 0 0 0;
+	list-style: none; /*remove bullet points*/
+	float: right;
+}
+
+/*make list horizontalul.nav li a
+li selects all list items within that list*/
+ul.nav li {
+	float: left; /*each list item in line with one other so they don't block/push the next element down*/
+	margin-right: 40px; /*without this no space between list items*/
+}
+
+/*select anchor tags in each list item in unordered list with class navigation to change color*/
+ul.nav li a {
+	color: #FAF3BC;
+}
+
+/*id selector, align intro text more with image to the right of it at top*/
+#intro {
+	margin: 50px 0px 75px 0px;
+}
+
+#new-cupcakes img {
+	/* thickness, style, color*/
+	border: 8px solid #FAF3BC;
+	margin: 0 0 20px 0; /* Top Right Bottom Left*/
+}
+
+#featured-cupcake img {
+	border: 8px solid #FAF3BC;
+}
+
+#copyright {
+	/*could also do border-bottom, border-left, border-right*/
+	border-top: 8px solid #2A0400;
+	padding: 10px 0px;
+	margin: 15px 0px;
+	text-align: center; /*doesnt move box of html element, moves text inside the element*/
+}
+
+
