@@ -1,19 +1,10 @@
-/*
- body {} in pink are selectors to select areas of our html to sylize
- .btn is a class selector
- #intro is an id selector, matches name in index.html
- padding makes element bigger,  margin pushes element away from surroundings [box model]
-   Hexidecimal color: 16x16, 256 color possibilities, values A through F
-   Each place is 2 numerals (for R G B respectively), total of 6 places
-   The higher the value, the more of each color will be mixed in
-   Ex: Red: #FF0000, Green: #00FF00, Blue: #0000FF
-*/
+
 
 body {
-	/*if the first font is not available, it will use the next listed font, sans-serif is very general*/
-	font-family: 'Nunito', sans-serif;
-	color: #FAF3BC; /*close to white but with some of the blue removed, close to yellow*/
-	background: #420600 url('img/bg-texture.jpg') repeat; /*color there in case image doesnt load,
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Nunito', sans-serif;*/
+	color: #560000; /*close to white but with some of the blue removed, close to yellow*/
+	background: #B3C032; /*color there in case image doesnt load,
 	 image in css/img, repeat repeats the image in case it doesnt fit in screen */
 
 }
@@ -21,7 +12,7 @@ body {
 /*element selector to select all anchor tags to change the color and underline for links*/
 
 a {
-	color: #4FB69F;
+	color: #3EA59F;
 	text-decoration: none;
 }
 
@@ -32,14 +23,14 @@ h1 {
 
 h2{
 	font-size: 1.500em;
-	color: #B4C34F;
+	color: #FAF3BC;
 }
 
 /*this button is actually a link being overriden by anchor selector, we override again bring back original color*/
 .btn {
 	color: #FAF3BC;
 	/*right top keyworkds sets positioning of background image*/
-  	background: #4FB69F url('img/texture.png') no-repeat right top;
+  	background: #4CC4A7 url('img/texture.png') no-repeat right top;
   	padding: 15px 30px; /*15 pads top and bottom, 30 pads left right*/
   	margin: 40px 0px;
   	border-radius: 25px; /*adds rounded corners to button, the higher the value, the curvier the corners*/
@@ -48,7 +39,8 @@ h2{
 
 /*apply pseudoclass to make button appear different when you hover over it*/
 .btn:hover{
-	background-color: #4CC4A7;
+	color: #560000;
+	background-color: #FAF3BC;
 }
 
 /*float naviagtion list to the right*/
@@ -62,7 +54,7 @@ ul.nav {
 li selects all list items within that list*/
 ul.nav li {
 	float: left; /*each list item in line with one other so they don't block/push the next element down*/
-	margin-right: 40px; /*without this no space between list items*/
+	margin-right: 90px; /*without this no space between list items*/
 }
 
 /*select anchor tags in each list item in unordered list with class navigation to change color*/
@@ -70,18 +62,22 @@ ul.nav li a {
 	color: #FAF3BC;
 }
 
-/*id selector, align intro text more with image to the right of it at top*/
-#intro {
-	margin: 50px 0px 75px 0px;
+ul.nav li a:hover{
+	color: #3EA59F;
 }
 
-#new-cupcakes img {
+/*id selector, align intro text more with image to the right of it at top*/
+#intro {
+	margin: 5px 0px 0px 50px;	
+}
+
+#yoga-community img {
 	/* thickness, style, color*/
 	border: 8px solid #FAF3BC;
 	margin: 0 0 20px 0; /* Top Right Bottom Left*/
 }
 
-#featured-cupcake img {
+#pose-of-the-day img {
 	border: 8px solid #FAF3BC;
 }
 
@@ -91,6 +87,19 @@ ul.nav li a {
 	padding: 10px 0px;
 	margin: 15px 0px;
 	text-align: center; /*doesnt move box of html element, moves text inside the element*/
+}
+
+#logo {
+	/*reduce image to % of its natural size */
+	/*max-width:99%;*/
+	margin: 10px 0 0 0 ;
+	
+}
+
+#my-pic {
+	margin: 30px 0 30px 0;
+	border: 8px solid #FAF3BC;
+	float: right;
 }
 
 

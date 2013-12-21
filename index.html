@@ -1,130 +1,85 @@
-<!-- command bracket for tabbing-->
-<!-- google.com/webfonts    easy to add to site and has simple licensing -->
+<!-- Personalized Yoga Site-->
+
 
 <!DOCTYPE HTML>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Smells Like Bakin' Cupcake Company</title>
-  <!-- rel (relative) and type are attributes, tells browser its css stylesheet, media says its a screen not other media, normalize creates level playing field, you are linking to an external stylesheet -->
+  <title>Christina Taggart Yoga</title>
   <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-  <!-- this grid must come after normalize because of cascading nature of stylesheets, normalize is base layer, then build rules on top of it-->
   <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-  <!-- this font is actually a stylesheet, this just makes it available to use,
-  doesn't set it anywhere yet, must put before the next line where you actually use the font-->
   <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 </head>
 <body>
-  <!-- create wrapper or container because contains page in the body element
-  clearfix is another class -->
   <div class="container clearfix">
     <!-- separate grid for logo now contained to 4 columns in grid, other content can flow around it-->
     <div class="grid_4">
-      <img src="img/logo.gif" alt="Smells Like Bakin">
+      <img src="img/lakshmi.png" alt="Lakshmi &amp; Vishnu" id="logo" style="max-width: 350px"> 
     </div>
-     <!-- dont want last column in grid to get bumped down... use "omega" refer to grid-->
+
     <div class="grid_8 omega">
       <ul class="nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cupcakes &amp; Prices</a></li>
-        <li><a href="#">Locations</a></li>
-        <li class="last"><a href="#">Contact Us</a></li>
+        <li><a href="#">About </a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Workshops</a></li>
+        <li class="last"><a href="#">Connect</a></li>
       </ul>
     </div>
-    <div id="intro" class="grid_9">
-      <h1>Opposites really do attract, especially in our kitchen! We combine unexpected flavors that melt together to create ironically delicious desserts.</h1>
-      <p><a href="#" class="btn">Browse Our Cupcakes</a></p>
-    </div>
-    <div class="grid_3 omega">
-      <img src="img/you-bake-me-blush.gif" alt="You Bake Me Blush">
+
+<!-- yoga is good medicine-->
+
+
+<!-- text and button-->
+    <div id="intro" class="grid_8 omega">
+      <h1>Yoga is Good Medicine</h1>
+      <h3>"Yoga is the journey of the self, <br> through the self, <br>to the self." <br> <br> -The Bhagavad Gita</h3> 
+      <p><br><a href="#" class="btn">Thoughts on Yoga</a></p>
     </div>
 
-    <div id="featured-cupcake" class="grid_7">
-      <h2>Cupcake of the Week</h2>
-      <p>This week’s featured cupcake is the <a href="#">Avocado Chocolate cupcake</a>. Its strange combo of flavors will kick your taste buds into fiesta mode!</p>
-      <img src="img/featured-cupcake.jpg" alt="Avocado Chocolate Cupcake">
+    <div class="grid_3">
+      <!--<img src="img/you-bake-me-blush.gif" alt="You Bake Me Blush"> -->
+      <img src="img/eight-angle-pose2.jpg" alt="Eight Angle Pose" style="max-width: 500px" id="my-pic">
     </div>
 
-    <div id="new-cupcakes" class="grid_5 omega">
-      <h2>Fresh Out the Oven</h2>
-      <p>Our newest cupcakes are <a href="#">Bacon Me Crazy</a> and <a href="#">Jalapeño So Spicy</a>. </p>
-      <img src="img/new-cupcake-bacon.jpg" alt="Bacon Me Crazy">
-      <img src="img/new-cupcake-jalapeno.jpg" alt="Jalapeno So Spicy">
+    <div id="pose-of-the-day" class="grid_7">
+      <h2>Pose of the Day</h2>
+      <p>Today's pose is <a href="#">Tree Pose</a>. Tree pose strengthens thighs, calves, ankles and spine, stretches inner thighs, chest and shoulders, improves sense of balance, relieves sciatica, and reduces flat feet. </p>
+      <img src="img/tree-pose-9212.jpg" alt="Avocado Chocolate Cupcake" style="max-width: 540px">
     </div>
 
+    <div id="yoga-community" class="grid_5 omega">
+      <h2>Yoga Community</h2>
+      <p>Find <a href="#">yoga classes</a> near you! </p>
+      <img src="img/flip-dog-4995.jpg" alt="Flip Dog" style="max-width: 200px">
+      <img src="img/pigeon-pose.jpg" alt="Pigeon Pose" style="max-width: 200px">
+    </div>
 
     <div class="grid_7">
-      <h2>Inside the Kitchen</h2>
-      <p>Smells Like Bakin’ started out in the garage of the husband wife duo Allison &amp; Joseph. Allison is the baker, and Joseph found a way for them to make a business out of her tasty treats. Flash forward to today and they have a successful store front, catering business and cupcake truck. </p>
+      <h2>Word of the Week</h2>
+      <p> The word of the week is <a href="#">Karuna</a>, sanskrit for compassion. Some time ago, a buddhist priest lived high in the mountains. He had a tiny bowl and fine spoon for food. One day he took a long walk in the woods. When he returned, he sees a robber running away with his bowl. The priest calls out in earnest, "Wait! You forgot the spoon!" </p>
       <p><a href="#" class="btn-small">Read More</a></p>
     </div>
 
     <div class="grid_5 omega">
-      <h2>Get Bakin' with Us</h2>
+      <h2>Something Quirky</h2>
 
-      <div id="contact">
-        <p>Call us: <span>1-555-CUP-CAKE</span><br>
-        Email us: <a href="#">bakeon@smellslikebakin.com</a></p>
+      <div id="quirk">
+        <p>When people offer me cheese I often tell them I don't eat much dairy, except for pizza.  </p>
+
       </div>
 
-
-      <p>We announce all of our new flavors first through Facebook &amp; Twitter, and even take requests!</p>
+      <p>For more of my quirks, find me on Facebook &amp; Twitter!</p>
       <a href="http://www.facebook.com/SmellsLikeBakin"><img src="img/facebook.gif" alt="Facebook"></a>
       <a href="https://twitter.com/#!/smellslikebakin"><img src="img/twitter.gif" alt="Twitter"></a>
     </div>
 
     <div id="copyright" class="grid_12">
-      <p>&copy; 2012 Smells Like Bakin' Cupcake Company. All Rights Reserved.</p>
+      <p>&copy; 2013 Yoga is Good Medicine. All Rights Reserved.</p>
     </div>
 
-  </div> <!-- for container -->
+  </div> 
 </body>
 </html>
 
-<!-- 
-HOSTING:
-
-move from our server to web server (anyone can access), as individual or small to medium size business, buy from hosting company, usually a monthly fee, they will host or provide you a server you can put your files on 
-mediatemple.net
-bluehost.com
-dreamhost.com
-3 types of hosting:
-Shared: share with other websites on same server, company gives you a place to put files, they give you domain
-(Next 2 are to scale up(lots of monthly traffic) additional customization on server))
-VPS: virtual private server: own server (linux, etc...) you can modify, allows some customization on server side
-Dedicated: $$$ own piece of hardware, specific computer, exclusively hosting your website, and any other sites you want to that are yours (only one not sharing with other websites) running virtual machine on same piece of hardware 
-
-Many hosting sites will ask if you want to purchase a domain name or ask for the domain name you already purchased
-don't want to transfer registration of domain
-do want to pay for a year+ of hosting, prices may be misleading- pay 10@/month
-
-
-DOMAIN  /Registrar:
-pay for domain with annual fee 10$
-TLD: top level domain -.com .net .org - .com for commercial uses like this baking company
-(premium domains are up for sale you can purchase from whoever owns it at their price)
-go to domain registrar
-godaddy.com
-name.com
-namecheap.com
-
-pointing your domain: registrar and hosting company need to be linked up
-DNS: domain name server -setup - need to copy paste stuff into your registrar
-ns - 97 awsdns-01.com copy paste into domain name registrar, confirm changes
-
-hosting using amazon web services - beyond current scope, advanced hosting option
-up to 24 hours to repoint a domain
-SNAG awesome domain names right away!
-
-
-FTP: file transfer protocol
-I'm gonna ftp that up to the server, i'm ftping it right now...hahaha
-
-download ftp client - program to download and install onto computer we will use to connect to web host and upload our files
-cyberduck (ftp client) - cyberduck.ch, downloadable through mac app store
-SFTP (SSH file transfer protocol) use this! secure file transfer protocol
-server, port, url, username, pass, connect
-drag drop files to cyberduck
-
--->
